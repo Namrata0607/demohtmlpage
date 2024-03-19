@@ -1,26 +1,115 @@
 body{
     margin: 0px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll;
 }
+
+/* nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav img {
+    width: 40px; /* Adjust size as needed */
+    /* height: auto;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  } */ 
+
 nav{
-    background-color: rgb(163, 237, 237);
+    background-color: rgb(35, 68, 153);
     overflow: hidden;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    margin-right: 30px;
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%;
 }
 nav a{
     float: left;
-    padding: 14px 16px;
+    padding: 20px;
     display: block;
     text-decoration: none;
 }
-a:hover{
-    background-color: antiquewhite;
-    color:black;
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 30px;
+    display: inline-block;
+  }
+
+  nav ul li a {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    /* transition: transform 0.5s ease; */
+    /* transition: transform; */
+    transition: 0.5s ease;
+
+  }
+nav ul li a:hover{
+    transition-delay: 0.1s;
+    background-color:white;
+    color:rgb(24, 148, 119);
+    border-radius: 8px;
+    /* text-decoration: underline; */
+}
+.bg{
+    margin: 0px;
+    width: 1000px;
+    height:550px;
+    opacity: 0.7;
 }
 
-img{
-    margin: 0px;
-    width: 100%;
-    height:800px;
+
+.card{
+    /* margin: 50px 50px 50px 100px; */
+    margin-top: 90px;
+    margin-bottom: 50px;
+    margin-left: 0px; /* Center the card horizontally */
+    margin-right: auto;
+    width: 500px;
+    height: 350px;
+    padding: 40px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    box-shadow:  3px 4px 8px rgba(63, 63, 63, 0.2);
 }
+
 h1{
     font-style: italic;
 }
@@ -73,19 +162,6 @@ iframe{
     margin-top: 50px 0px 50px 0px;
 }
 
-.card{
-    /* margin: 50px 50px 50px 100px; */
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto; /* Center the card horizontally */
-    margin-right: auto;
-    width: 500px;
-    height: 350px;
-    padding: 40px;
-    background-color: aquamarine;
-    border-radius: 10px;
-    box-shadow:  4px 4px 8px rgba(0, 0, 0, 0.6);
-}
 /* 
 .form{
     background-color: aquamarine;
