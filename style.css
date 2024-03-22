@@ -64,11 +64,12 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-left: 10px;
     display: flex;
   }
 
   nav ul li {
-    margin-right: 30px;
+    margin-right: 20px;
     display: inline-block;
   }
 
@@ -101,9 +102,55 @@ nav ul li a:hover{
     /* opacity: 0.7; */
 }
 
+.logoimg{
+    padding: 0px;
+    margin: 10px 200px 20px 640px;
+    border-radius: 50%;
+}
+
 .loginform{
     z-index: 9999;
 }
+
+/* .loginform.my-marquee{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: yellow;
+    padding: 40px;
+    border: 1px solid black;
+} */
+/* .loginform.p{
+    font-style: 20px;
+} */
+
+.profile-card{
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+}
+
+.card-img-top{
+    margin: 20px;
+    height: 5px;
+    width: 5px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .formcard{
     /* margin: 50px 50px 50px 100px; */
@@ -112,26 +159,42 @@ nav ul li a:hover{
     margin-left: 0px; /* Center the card horizontally */
     /* margin-right: auto; */
     margin: 100px 500px auto;
+    margin-top: 20px;
     width: 500px;
     height: 350px;
     padding: 40px;
     border-radius: 10px;
-    background-color: rgb(148, 215, 246,0.7);
+    background-color: rgb(148, 215, 246,0.8);
+    /* background-color: rgba(155, 241, 224, 0.7); */
     box-shadow:  3px 4px 8px rgba(63, 63, 63, 0.2);
     /* background-color: transparent; Making the background color transparent */
     border: 2px solid rgba(0, 0, 0, 0);
+    transition: transform 0.3s ease-in-out;
 }
-.form{
+
+.formcard:hover{
+    transform: scale(1.05);
+    /* border: 2px solid rgb(24, 240, 161); */
+    border: 2px solid rgb(255, 255, 255)
+}
+/* .form{
     background-color: transparent;
     text-align: center;
-}
+} */
 .btnsubmit{
-    margin: 0px 50px;
+    margin-left: 150px;
     display: inline-block;
-    background-color:rgb(19, 177, 235,0.7);
+    /* background-color:rgb(19, 177, 235,0.7); */
+    background-color: rgba(0, 255, 204, 0.6);
     padding: 10px 30px; 
     border:1px rgb(243, 236, 236,0.6) solid;   
     border-radius: 6px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btnsubmit:hover{
+    transform: scale(1.05);
+    border: 1px solid rgb(0, 0, 0);
 }
 .container3{
     background-color: rgb(57, 135, 243);
@@ -179,7 +242,7 @@ iframe{
     transition: transform 0.5s ease;
 }
 
-.container2:hover:hover{
+.container2:hover{
     transform: scale(1.02);
     box-shadow: 2px 4px 40px rgb(20, 5, 12);
 }
